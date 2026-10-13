@@ -1,14 +1,41 @@
-#container {
-    display: flex;
-    height: 1080px;
-    justify-content: center;
-    align-items: center;
+body {
+    place-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+    color: white;
+    margin: 0%;
+    height: 100%;
+    background-image: url(https://cdn1.epicgames.com/offer/carnation/EGST_Edition_Thumbnail_1920X1080_1920x1080-a9c8b561b4fd4dd7858b9127e1c6782e);
 }
 
-a{  
-    color: black;
+.TopFiller {
+    width: 100%;
+    place-items: center;
 }
 
-h1{
+.TopFiller {
+    width: 100%;
+    place-items: center;
+}
+
+.TopDiv {
+    background-color: black;
+    border: 20px solid black;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-top: 50px;
+    width: 520px;
+    z-index: 1;
+    transition: transform .2s;
+}
+
+.TopBar {
     font-size: 100px;
+    text-align: center;
+    margin: 0%;
+    color: white;
+}
+
+.TopDiv:hover {
+    transform: scale(1.1);
 }

@@ -1,11 +1,16 @@
 body {
     place-items: center;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(https://images.fastcompany.com/image/upload/f_webp,q_auto,c_fit/fc/3034115-poster-p-1-the-monkey-selfie-question.jpg);
     background-size: cover;
     color: white;
     margin: 0%;
     height: 100%;
+    background-color: rgba(0, 0, 0, 0.850);
+
+    animation-name: background;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 .TopFiller {
@@ -21,7 +26,6 @@ body {
     border-top: 50px;
     width: 520px;
     z-index: 1;
-    transition: transform .2s;
 }
 
 .TopBar {
@@ -29,10 +33,6 @@ body {
     text-align: center;
     margin: 0%;
     color: white;
-}
-
-.TopDiv:hover {
-    transform: scale(1.1);
 }
 
 .CGamesL {
@@ -66,7 +66,6 @@ body {
 .R6IMG, .CS2IMG, .TF2IMG, .ARMARIMG, .WTIMG {
     width: 80px;
     padding: 0px;
-    box-sizing: border-box;
     transition: transform .2s;
     margin: 3px 0px;
 }
@@ -77,4 +76,12 @@ body {
 
 li {
     list-style-type: none;
+}
+
+@keyframes background {
+    0% {background-image: url(https://cdn1.epicgames.com/offer/carnation/EGST_Edition_Thumbnail_1920X1080_1920x1080-a9c8b561b4fd4dd7858b9127e1c6782e);}
+    25% {background-image: url(https://images8.alphacoders.com/132/thumb-1920-1329760.jpeg)}
+    50% {background-image: url(https://spuf.org/wp-content/uploads/2017/12/Banner-1024x576.png)}
+    75% {background-image: url(https://images3.alphacoders.com/123/thumb-1920-1238747.jpg);}
+    100% {background-image: url(https://staticfiles.warthunder.com/upload/image/0_Wallpaper_Renders/Aircraft/1920x1080_re_2005_vdm_logo_c83f8c2bcae3a1c8d264072a6de70e40.jpg);}
 }
